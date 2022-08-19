@@ -1,0 +1,11 @@
+<h1>Vos BlogPosts</h1>
+<div>
+    <div *ngFor="let bpost of blogposts">
+        <div>
+            <h4>{{ bpost.titre }}</h4>
+            <p>{{ bpost.corps }}</p>
+            <p>{{ bpost.date }}</p>
+        </div>        
+    </div>
+</div>
+<blog-form></blog-form>

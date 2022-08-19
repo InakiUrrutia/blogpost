@@ -2,10 +2,15 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
-};
+import { BlogPost } from "src/app/model/Blogpost";
 
+export const environment = {
+  production: false,
+  blogposts: [
+    new BlogPost("test", "testcorps", new Date(), []),
+    new BlogPost("test2", "test2corps", new Date(), [])
+  ]
+};
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
